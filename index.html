@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mumtahina Surgical | Littmann Classic III</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        medical: {
+                            50: '#fdf2f8',
+                            500: '#db2777',
+                            600: '#be185d',
+                            900: '#500724',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Outfit:wght@300;400;600;800&display=swap');
+        
+        body {
+            font-family: 'Hind Siliguri', sans-serif;
+            background-color: #030712;
+            color: #f3f4f6;
+        }
+        h1, h2, h3, .font-outfit {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .glass-morphism {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .glass-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.02) 100%);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
+        .metallic-text {
+            background: linear-gradient(45deg, #ff758c, #ff7eb3, #fff, #b2ffff, #84dcc6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 6s linear infinite;
+            background-size: 200% auto;
+        }
+
+        @keyframes shine {
+            to { background-position: 200% center; }
+        }
+
+        .floating-3d {
+            animation: float 6s ease-in-out infinite;
+            filter: drop-shadow(0 25px 25px rgba(219, 39, 119, 0.25));
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-15px) rotate(2deg); }
+        }
+
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(219, 39, 119, 0.5);
+        }
+    </style>
+</head>
+<body class="selection:bg-pink-500 selection:text-white pb-20">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-pink-600 via-rose-600 to-purple-600 text-white text-xs py-2 text-center font-semibold tracking-wider uppercase">
+        <i class="fa-solid fa-truck-fast mr-2"></i> সারা দেশে ক্যাশ অন ডেলিভারি (ফ্রি হোম ডেলিভারি)
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 glass-morphism border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-pink-500 via-rose-500 to-purple-600 flex items-center justify-center shadow-lg shadow-pink-500/30">
+                    <i class="fa-solid fa-stethoscope text-white text-2xl"></i>
+                </div>
+                <div>
+                    <span class="text-2xl font-bold tracking-tight text-white block leading-none font-outfit">Mumtahina</span>
+                    <span class="text-xs font-bold tracking-widest uppercase text-pink-400 bg-pink-500/10 px-2 py-0.5 rounded-full border border-pink-500/20">Surgical</span>
+                </div>
+            </div>
+            <a href="#order-section" class="bg-gradient-to-r from-pink-500 to-rose-600 hover:from-pink-600 hover:to-rose-700 text-white px-6 py-3 rounded-xl font-bold text-sm shadow-lg shadow-pink-500/30 transition-all duration-300 hover:scale-105 flex items-center space-x-2">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>অর্ডার করুন</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 lg:pt-16">
+        
+        <!-- Hero Section -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <div class="inline-flex items-center space-x-2 bg-pink-500/10 border border-pink-500/20 px-4 py-1.5 rounded-full text-pink-400 text-sm font-semibold mb-6">
+                <i class="fa-solid fa-award"></i>
+                <span>১০০% অরিজিনাল প্রোডাক্ট গ্যারান্টি</span>
+            </div>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold mb-6 tracking-tight font-outfit leading-none">
+                3M Littmann <br class="hidden sm:inline">
+                <span class="metallic-text">Classic III Stethoscope</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-400 font-light">
+                স্পেশাল <span class="text-pink-400 font-semibold">Rainbow Raspberry (5806)</span> এডিশন - ডাক্তারদের আস্থার প্রতীক।
+            </p>
+        </div>
+
+        <!-- Product Showcase Grid -->
+        <div class="grid lg:grid-cols-12 gap-12 items-center mb-24">
+            
+            <!-- 3D Image Preview Column (7 Cols) -->
+            <div class="lg:col-span-7 relative">
+                <div class="glow-effect absolute inset-0 bg-gradient-to-r from-pink-600 to-purple-600 rounded-3xl blur-3xl opacity-20 transform -rotate-1"></div>
+                
+                <div class="relative glass-card rounded-3xl p-6 sm:p-8">
+                    <!-- Main Active Image -->
+                    <div class="aspect-square w-full rounded-2xl overflow-hidden mb-6 bg-slate-900/80 relative shadow-2xl border border-white/10 group">
+                        <!-- image_0: Main frontal product diagram -->
+                        <img id="mainImage" src="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE8rFkkN3f0RRI2kHmUm8ndcprcot6GM2Q66D-1-LCm5bPyOuvpGxXvUq2_4kBzqvIa1FbY6bm5nvr4bsRW8_FhKFJMjTF2L_42_EJZQi2_1u--5nz9QDIev785NJ-7PElvkqy6QWRSXGyaMOcJzatwuHqs7uI=" alt="Littmann Stethoscope Main View" class="w-full h-full object-contain p-4 transition duration-500 group-hover:scale-105">
+                        
+                        <div class="absolute top-6 left-6 flex flex-col gap-2">
+                            <span class="bg-pink-600 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg uppercase tracking-wider">
+                                সেরা অফার
+                            </span>
+                            <span class="bg-slate-900/90 backdrop-blur-md text-slate-300 text-xs font-semibold px-4 py-1.5 rounded-full border border-white/10">
+                                মডেল: ৫৮০৬
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- 4 Thumbnails Gallery of specific stethoscope angles -->
+                    <div class="grid grid-cols-4 gap-3 sm:gap-4">
+                        <!-- image_0: Main visual -->
+                        <div onclick="changeImage(this, 'https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE8rFkkN3f0RRI2kHmUm8ndcprcot6GM2Q66D-1-LCm5bPyOuvpGxXvUq2_4kBzqvIa1FbY6bm5nvr4bsRW8_FhKFJMjTF2L_42_EJZQi2_1u--5nz9QDIev785NJ-7PElvkqy6QWRSXGyaMOcJzatwuHqs7uI=')" class="cursor-pointer rounded-xl overflow-hidden border-2 border-pink-500 bg-white transition-all duration-300 aspect-square shadow-md hover:opacity-90 flex items-center justify-center p-1">
+                            <img src="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE8rFkkN3f0RRI2kHmUm8ndcprcot6GM2Q66D-1-LCm5bPyOuvpGxXvUq2_4kBzqvIa1FbY6bm5nvr4bsRW8_FhKFJMjTF2L_42_EJZQi2_1u--5nz9QDIev785NJ-7PElvkqy6QWRSXGyaMOcJzatwuHqs7uI=" class="w-full h-full object-contain">
+                        </div>
+                        <!-- image_3: Curved 3D visual -->
+                        <div onclick="changeImage(this, 'https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmJtl3xE6YCb9ztd2stF3j6DB-CIssxLjzdONy9UTM-IKM_N7Qjsy8OwYMIvufRqL6La5o9UBjsZ1jxPf9QmgvXz3oVjnhakuXLd0TEqxo_G09h_n4fJjU4tH8v-40BVown2jpxXG-LoN6h8IbxjYMtNRkJjhFAnDbkx2WTMPNdYGMOaBpKyJkG0Mnhi6QWgHM0IqDlzwzQBfL6aqhjQ6LZD7-bKMiapWCbyMQ_8LMzzYS')" class="cursor-pointer rounded-xl overflow-hidden border-2 border-transparent bg-white transition-all duration-300 aspect-square shadow-md hover:border-pink-500/50 opacity-70 hover:opacity-100 flex items-center justify-center p-1">
+                            <img src="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmJtl3xE6YCb9ztd2stF3j6DB-CIssxLjzdONy9UTM-IKM_N7Qjsy8OwYMIvufRqL6La5o9UBjsZ1jxPf9QmgvXz3oVjnhakuXLd0TEqxo_G09h_n4fJjU4tH8v-40BVown2jpxXG-LoN6h8IbxjYMtNRkJjhFAnDbkx2WTMPNdYGMOaBpKyJkG0Mnhi6QWgHM0IqDlzwzQBfL6aqhjQ6LZD7-bKMiapWCbyMQ_8LMzzYS" class="w-full h-full object-contain">
+                        </div>
+                        <!-- image_5: Curved loop perspective -->
+                        <div onclick="changeImage(this, 'https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJJ9bVBK60WRiK3DcKAVezjUxnH4kTDINVCXYalT1rTP_LMQydIfPHRcgAv5PUkRdLkKZOhA4wjwc5DpZu93xmfqGRC_wI-2HviHVb_K5xnrkou70mt4wp08Wyit4K9spue6PYsMwll9qnCWVYZhL7vu8hX3p-EZDt9AIi5BUQGYWAnXn6lf260o9Sn-zKhoz6vOW6GPNpn3NZClrW8lu-')" class="cursor-pointer rounded-xl overflow-hidden border-2 border-transparent bg-white transition-all duration-300 aspect-square shadow-md hover:border-pink-500/50 opacity-70 hover:opacity-100 flex items-center justify-center p-1">
+                            <img src="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJJ9bVBK60WRiK3DcKAVezjUxnH4kTDINVCXYalT1rTP_LMQydIfPHRcgAv5PUkRdLkKZOhA4wjwc5DpZu93xmfqGRC_wI-2HviHVb_K5xnrkou70mt4wp08Wyit4K9spue6PYsMwll9qnCWVYZhL7vu8hX3p-EZDt9AIi5BUQGYWAnXn6lf260o9Sn-zKhoz6vOW6GPNpn3NZClrW8lu-" class="w-full h-full object-contain">
+                        </div>
+                        <!-- image_7: Breakdown & annotation visual of the exact product -->
+                        <div onclick="changeImage(this, 'image_7.png')" class="cursor-pointer rounded-xl overflow-hidden border-2 border-transparent bg-white transition-all duration-300 aspect-square shadow-md hover:border-pink-500/50 opacity-70 hover:opacity-100 flex items-center justify-center p-1">
+                            <img src="image_7.png" class="w-full h-full object-contain">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pricing & Info Column (5 Cols) -->
+            <div class="lg:col-span-5 space-y-8">
+                <div class="glass-card rounded-3xl p-8 border border-white/10">
+                    <div class="flex items-center justify-between mb-6">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-widest text-slate-400 block mb-1">অফিসিয়াল প্রাইস</span>
+                            <div class="text-4xl sm:text-5xl font-extrabold text-white font-outfit">১৪,৬০০ <span class="text-xl font-normal text-slate-400">টাকা</span></div>
+                        </div>
+                        <div class="text-right">
+                            <span class="text-lg sm:text-xl font-semibold text-slate-500 line-through block">১৬,৫০০ টাকা</span>
+                            <span class="bg-emerald-500/20 text-emerald-400 text-xs font-bold px-3 py-1 rounded-full border border-emerald-500/30 inline-block mt-1">১২% ডিসকাউন্ট</span>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 pt-6 border-t border-white/10">
+                        <div class="flex items-start space-x-3 text-slate-300">
+                            <div class="w-6 h-6 rounded-full bg-pink-500/20 text-pink-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <span class="text-sm">ডাবল-সাইডেড চেস্টপিস (অ্যাডাল্ট ও পেডিয়াট্রিক ডায়াফ্রাম)</span>
+                        </div>
+                        <div class="flex items-start space-x-3 text-slate-300">
+                            <div class="w-6 h-6 rounded-full bg-pink-500/20 text-pink-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <span class="text-sm">উচ্চ মানের অ্যাকোস্টিক সেন্সিটিভিটি ও সফট-সিলিং ইয়ার টিপস</span>
+                        </div>
+                        <div class="flex items-start space-x-3 text-slate-300">
+                            <div class="w-6 h-6 rounded-full bg-pink-500/20 text-pink-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <span class="text-sm"><strong class="text-white">ফ্রি উপহার:</strong> অরিজিনাল লিটম্যান ক্যারি কেস ও লেজার নেম এনগ্রেভিং</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t border-white/10 flex items-center justify-between text-xs text-slate-400">
+                        <span class="flex items-center"><i class="fa-solid fa-shield-halved text-emerald-400 mr-2"></i> ১ বছরের ওয়ারেন্টি</span>
+                        <span class="flex items-center"><i class="fa-solid fa-truck text-emerald-400 mr-2"></i> ২৪-৪৮ ঘণ্টায় ডেলিভারি</span>
+                    </div>
+                </div>
+
+                <!-- Trust Badge -->
+                <div class="bg-gradient-to-r from-pink-500/10 to-purple-500/10 border border-pink-500/20 rounded-2xl p-6 text-center">
+                    <h3 class="font-bold text-lg mb-2 text-white">কেন মুতাহিনা সার্জিক্যাল থেকে কিনবেন?</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">আমরা শতভাগ জেনুইন আমদানিকৃত পণ্য সরবরাহ করি। পণ্য হাতে পেয়ে চেক করে পেমেন্ট করার সুব্যবস্থা রয়েছে।</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Order Section -->
+        <div id="order-section" class="max-w-3xl mx-auto">
+            <div class="relative">
+                <div class="absolute -inset-1 bg-gradient-to-r from-pink-600 via-rose-500 to-purple-600 rounded-3xl blur opacity-30"></div>
+                
+                <div class="relative glass-card rounded-3xl p-6 sm:p-10 border border-white/10 shadow-2xl">
+                    <div class="text-center max-w-xl mx-auto mb-10">
+                        <span class="text-pink-400 font-bold tracking-widest text-xs uppercase bg-pink-500/10 px-3 py-1 rounded-full border border-pink-500/20 inline-block mb-3">ইনস্ট্যান্ট বুকিং</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white font-outfit">অর্ডার ফর্ম কনফার্ম করুন</h2>
+                        <p class="text-slate-400 text-sm mt-2">কোনো অগ্রিম পেমেন্ট ছাড়া অর্ডার করতে নিচের ফর্মটি পূরণ করুন</p>
+                    </div>
+
+                    <form id="orderForm" onsubmit="event.preventDefault(); sendToWhatsApp();" class="space-y-6">
+                        
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <!-- Name -->
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-300 mb-2">আপনার নাম <span class="text-pink-500">*</span></label>
+                                <div class="relative">
+                                    <span class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-500"><i class="fa-solid fa-user"></i></span>
+                                    <input type="text" id="name" required placeholder="উদা: ডাঃ তানভীর আহমেদ" class="w-full pl-10 pr-4 py-3.5 rounded-xl bg-slate-950/80 border border-white/10 text-white placeholder-slate-600 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 transition">
+                                </div>
+                            </div>
+
+                            <!-- Phone -->
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-300 mb-2">মোবাইল নম্বর (WhatsApp) <span class="text-pink-500">*</span></label>
+                                <div class="relative">
+                                    <span class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-500"><i class="fa-solid fa-phone"></i></span>
+                                    <input type="tel" id="phone" required placeholder="উদা: 01xxxxxxxxx" class="w-full pl-10 pr-4 py-3.5 rounded-xl bg-slate-950/80 border border-white/10 text-white placeholder-slate-600 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 transition">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Address -->
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-300 mb-2">ফুল ডেলিভারি অ্যাড্রেস <span class="text-pink-500">*</span></label>
+                            <div class="relative">
+                                <span class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-500 mt-3.5"><i class="fa-solid fa-location-dot"></i></span>
+                                <textarea id="address" required rows="2" placeholder="বাসা/হোল্ডিং, রোড, থানা, জেলা" class="w-full pl-10 pr-4 py-3.5 rounded-xl bg-slate-950/80 border border-white/10 text-white placeholder-slate-600 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 transition resize-none"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <!-- Quantity Selection -->
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-300 mb-2">পরিমাণ (Quantity) <span class="text-pink-500">*</span></label>
+                                <select id="quantity" onchange="calculateTotal()" class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-white/10 text-white focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 transition">
+                                    <option value="1">১টি - ১৪,৬০০ টাকা</option>
+                                    <option value="2">২টি - ২৯,২০০ টাকা</option>
+                                    <option value="3">৩টি - ৪৩,৮০০ টাকা</option>
+                                </select>
+                            </div>
+
+                            <!-- Payment Method (Fixed COD) -->
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-300 mb-2">পেমেন্ট মেথড</label>
+                                <div class="w-full px-4 py-3.5 rounded-xl bg-slate-900 border border-emerald-500/30 text-emerald-400 font-semibold flex items-center justify-between">
+                                    <span>ক্যাশ অন ডেলিভারি (COD)</span>
+                                    <i class="fa-solid fa-money-bill-wave"></i>
+                                </div>
+                                <span class="text-[11px] text-slate-500 mt-1 block">পণ্য বুঝে পেয়ে মূল্য পরিশোধ করুন।</span>
+                            </div>
+                        </div>
+
+                        <!-- Engraving -->
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-300 mb-2">লেজার নেম এনগ্রেভিং (ঐচ্ছিক)</label>
+                            <div class="relative">
+                                <span class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-500"><i class="fa-solid fa-tag"></i></span>
+                                <input type="text" id="engraving" placeholder="স্টেথোস্কোপে যে নামটি খোদাই করতে চান" class="w-full pl-10 pr-4 py-3.5 rounded-xl bg-slate-950/80 border border-white/10 text-white placeholder-slate-600 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 transition">
+                            </div>
+                            <span class="text-xs text-emerald-400 mt-1.5 block"><i class="fa-solid fa-gift mr-1"></i> এই ফ্রি সার্ভিসের জন্য কোনো চার্জ প্রযোজ্য নয়।</span>
+                        </div>
+
+                        <!-- Price Calculation Display -->
+                        <div class="bg-slate-950/80 p-4 rounded-2xl border border-white/5 flex items-center justify-between">
+                            <span class="text-slate-400 font-medium">সর্বমোট প্রদেয় অ্যামাউন্ট:</span>
+                            <span id="totalDisplay" class="text-2xl font-extrabold text-pink-400 font-outfit">১৪,৬০০ টাকা</span>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="w-full group relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden rounded-xl bg-gradient-to-r from-pink-500 via-rose-500 to-purple-600 shadow-xl shadow-pink-500/25 transition-all duration-300 hover:scale-[1.02] hover:shadow-pink-500/40">
+                            <span class="w-full h-full px-8 py-5 transition-all ease-out bg-slate-950 rounded-[10px] group-hover:bg-opacity-0 flex items-center justify-center space-x-3">
+                                <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
+                                <span class="text-lg text-white font-outfit uppercase tracking-wider">WhatsApp-এ অর্ডার কনফার্ম করুন</span>
+                            </span>
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-20 border-t border-white/10 py-8 text-center text-xs text-slate-500">
+        <p>© <span id="currentYear"></span> Mumtahina Surgical. All rights reserved.</p>
+        <p class="mt-1">Designed for high conversion & seamless mobile experience.</p>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        const UNIT_PRICE = 14600;
+
+        function changeImage(element, src) {
+            document.getElementById('mainImage').src = src;
+            
+            // Border animation
+            const thumbnails = element.parentElement.children;
+            for (let thumb of thumbnails) {
+                thumb.classList.remove('border-pink-500');
+                thumb.classList.add('border-transparent', 'opacity-70');
+            }
+            element.classList.remove('border-transparent', 'opacity-70');
+            element.classList.add('border-pink-500', 'opacity-100');
+        }
+
+        function calculateTotal() {
+            const quantity = document.getElementById('quantity').value;
+            const total = UNIT_PRICE * quantity;
+            // Format number to Bengali commas
+            const formattedTotal = total.toLocaleString('bn-BD');
+            document.getElementById('totalDisplay').textContent = `${formattedTotal} টাকা`;
+        }
+
+        function sendToWhatsApp() {
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const address = document.getElementById('address').value;
+            const quantity = document.getElementById('quantity').value;
+            const engraving = document.getElementById('engraving').value;
+            const totalAmount = (UNIT_PRICE * quantity).toLocaleString('bn-BD');
+
+            if(!name || !phone || !address) {
+                alert('দয়া করে সকল রিকোয়ার্ড ফিল্ড পূরণ করুন।');
+                return;
+            }
+
+            const adminPhone = '01776166547';
+            const message = `🚨 *নতুন অর্ডার এসেছে - মুতাহিনা সার্জিক্যাল* 🚨%0A%0A` +
+                            `👤 *নাম:* ${name}%0A` +
+                            `📞 *ফোন:* ${phone}%0A` +
+                            `📍 *ঠিকানা:* ${address}%0A` +
+                            `📦 *পণ্য:* 3M Littmann Classic III (Rainbow Raspberry)%0A` +
+                            `🔢 *পরিমাণ:* ${quantity} টি%0A` +
+                            `💰 *মোট বিল:* ${totalAmount} টাকা%0A` +
+                            `💳 *পেমেন্ট:* ক্যাশ অন ডেলিভারি (COD)%0A` +
+                            `🏷️ *এনগ্রেভিং:* ${engraving || 'প্রয়োজন নেই'}`;
+
+            const whatsappURL = `https://wa.me/${adminPhone}?text=${message}`;
+            window.open(whatsappURL, '_blank');
+        }
+    </script>
+</body>
+</html>
